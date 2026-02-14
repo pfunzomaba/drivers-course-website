@@ -5,7 +5,7 @@ Overview:
 This is a web development project created in 2023 as part of the ICT1512 – Introduction to Interactive Programming practical assessment.
 The goal of the project was to design and implement an interactive website for a local driving school, demonstrating core front-end development skills including HTML, CSS, JavaScript, form validation, DOM manipulation, and JSON data handling. 
 
-Assessment16Requirements:
+
 
 Project Objectives:
 The project required building a multi-page interactive website that:
@@ -21,11 +21,13 @@ Core Features Implemented under the PDF:
 [Assessment16Requirements.pdf](https://github.com/user-attachments/files/25314142/Assessment16Requirements.pdf)
 
 
+
 Technologies Used:
 HTML5
 CSS3
 JavaScript
 JSON for structured data storage
+
 
 Project Structure:
 index.html
