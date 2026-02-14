@@ -1,0 +1,1348 @@
+/* 
+Author: Maba Pfunzo
+Date: 05/05/2023
+File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* apply a natural box layout model to all elements */
+* {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+   display: block;
+}
+
+/* Style rules for body and images */
+body {
+	background-color: #000;
+	
+}
+
+img { 
+    max-width: 100%;
+    display: block;
+}
+
+/* Style rule for box sizing applies to all elements */
+* {
+  box-sizing: border-box;
+}
+
+
+/* Style rules for mobile viewport */
+
+/* Style rule for header */
+header {
+    top: 0;
+    background-color: #000;
+    height: 190px;
+}
+
+header img {
+    margin: 0 auto;
+	
+}
+
+/* Style rules for hamburger menu */
+.mobile-nav a {
+    color: #fff;
+    font-family: 'Francois One', sans-serif;
+    text-align: center;  
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+}
+
+.mobile-nav a.menu-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* Show mobile class, hide tablet-desktop class and menu-links id */
+.mobile {
+    display: block;
+}
+
+
+/* Mobile lightbox*/
+
+/* ---------------------------------------------------*/
+
+/* Style rules for main content */
+main {
+    background-color: #fff;
+    padding: 2%;
+    font-size: 1.15em;
+    font-family: 'Roboto Slab', serif;
+}
+
+
+/* Style rules for form elements */
+.container-form h1 {
+   font-size: 1.4em;
+   margin: 20px 0;
+   
+}
+
+
+.container-form {
+  font-family: Arial;
+  font-size: 20px;
+  padding: 8px;
+  width: 100%;
+ 
+}
+
+.container-form h1{
+	text-align: center;
+}
+
+form {
+   border: none;
+   background-color: lightblue;
+   box-shadow: 3px 3px 20px gray;
+   padding: 30px;
+   display: block;
+   width: 70%;
+   /*max-width: 100%;*/
+   margin: 0 auto;
+}
+
+form#payment {
+   border: none;
+   background-color: lightBlue;
+   box-shadow: 3px 3px 20px gray;
+   padding: 30px;
+   display: block;
+   width: 90%;
+   margin: 0 auto;
+}
+
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,.col-50,.col-75 {
+  padding: 0 16px;
+}
+
+/*.container {
+  background-color: #f2f2f2;
+  padding: 5px 15px 15px 15px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}*/
+
+input[type=text], [type=number], [type=email], [type=tel], [type=password] {
+  width: 80%;
+  margin-bottom: 20px;
+  padding: 11px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+ textarea {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+
+
+.radio{
+	/*font-size: 30px;
+	font-weight: 500;*/
+	text-transform: capitalize;
+	display: inline-block;
+	vertical-align: middle;
+	color: #000;
+	margin-left: 20px;
+}
+
+
+#expDate input {
+        width: 29%;
+		padding-bottom: 6px;
+   }
+
+#expDate label,input {
+       display: inline-block;
+   }
+   
+#parentsDetails label {
+      
+		padding-top: 10%;
+ }
+   
+label {
+  margin-bottom: 15px;
+  display: block;
+  padding-top: 2px;
+}
+
+
+#addrHome label{
+		color: blue;
+}
+
+#checkme label{
+	font-size: 25px;
+	font-weight: 500;
+}
+
+form #checkme label {
+  display: block;
+  padding-left: 15px;
+  
+}
+
+form #checkme input {
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  margin: 0;
+  vertical-align: bottom;
+  position: relative;
+  top: -5px;
+}
+
+#creditcard #typelin select{
+	width: 30%;
+}
+
+#expMonth, #expYear{
+	background-color: #fff;
+}
+
+// Validation styles
+/*#input-control {
+    display: flex;
+    flex-direction: column;
+}*/
+
+#input-control input {
+    border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-size: 1.4em;
+	padding: 10px;
+	width: 100%;
+}
+
+#input-control input:focus {
+    outline: 1;
+}
+
+#input-control.success input {
+    border-color: blue;
+}
+
+#input-control.error input {
+    border-color: red;
+}
+
+div #feedbackf, #feedbacks,#feedbacku,#feedbackc, #feedbackt,  #feedbackId, #feedbacke, #feedbackPaddr, #feedbackh,#feedbackl, #feedbackp,  #feedbackpwd, #feedbackpwd2 {
+   clear: left;
+   color: red;
+   margin-left: 10px;
+   margin-bottom: 20px;
+}
+
+
+
+/* Styles for Submit  button*/
+#submitButton{
+	margin-left:450px;
+	float: right;
+	cursor: pointer;
+	text-align: center;
+	
+}
+
+
+input[type='submit'] {
+   clear: left;
+   display: block;
+   margin: 0 auto;
+   float: none;
+   font-size: 1.1em;
+   background-color: darkblue;
+   color: white;
+   padding: 3px;
+   width: 100px;
+}
+
+#errorBox {
+   width: 70%;
+   color: red;
+   font-size: 0.8em;
+   margin-left: 340px;
+   /*margin-top: 20px;*/
+   border: 0px solid blue;
+   background-color: lightBlue;
+   padding: 15px;
+}
+
+#errorOption{
+   width: 80%;
+   color: red;
+   font-size: 1.1em;
+   margin-left: 10px;
+   margin-top: 10px;
+   border: 0px solid blue;
+   background-color: lightBlue;
+   padding: 15px;
+}
+
+
+.btn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: red; /* Green */
+  color: white;
+}
+
+/*Information from registration page style*/
+div#clientRegistration {
+   width: 60%;
+   float: left;
+   clear: left;
+   color: #613d3d;
+}
+
+div#clientRegistration label {
+   float: left;
+   clear: left;
+   width: 75px;
+   margin-bottom: 5px;
+   display: inline-block;
+   color: #613d3d;
+}
+
+div#clientRegistration input {
+   float: right;
+   margin-bottom: 5px;
+   font-size: 0.9em;
+}
+
+div#clientRegistration input[id=""] {
+   visibility: hidden;
+}
+
+div#clientRegistration input[disabled] {
+   border: 0px solid transparent;
+   background-color: transparent;
+   color: #613d3d;
+}
+
+#placelook, #addressFields{
+	padding-top: 15%;
+}
+
+
+/* Order Form styles*/
+
+div #titleorder h1{
+	padding-top: 70px;
+	text-align: center;
+	font-size: 1.4em;
+}
+
+.container-form #orderSection{
+	  font-family: Arial;
+	  font-size: 17px;
+	   padding: 5px 15px 15px 15px;
+}
+
+
+
+#orderSection label,input{
+	display: inline-block;
+	padding-right: 20px;
+	
+}
+
+
+aside {
+   position: absolute;
+   top: 750px;
+   left: 1350px;
+   color: blue;
+  
+  
+}
+
+aside span {
+   position: relative;
+   font-size: 1.0em;
+   
+}
+
+aside span#subtotallab {
+   top: 0px;
+   left: 0px;
+   width: 220px;   
+}
+
+aside span#subtotal {
+   top: 0px;
+   left: 80px;
+   width: 100px;
+   text-align: right;
+}   
+
+aside span#vatpect {
+   top: 15px;
+   left: 0px;
+   width: 220px;   
+}
+
+aside span#vat {
+  top: 15px;
+   left: 90px;
+   width: 100px;
+   text-align: right;
+}
+
+aside span#totallab {
+   top: 30px;
+   left: 0px;
+   width: 220px;   
+}
+
+aside span#total {
+   top: 25px;
+   left: 115px;
+   width: 100px;
+   text-align: right;
+}
+
+
+
+/* Payment Form Styles */
+
+form fieldset {
+   border: none;
+   border-left: 5px solid red;
+}
+
+form #orderSection{
+	border-left: 5px solid red;
+}
+
+form legend {
+   font-size: 1.4em;
+   padding: 8px;
+   width: 80%;
+   text-align: left;
+   margin-left: -5px;
+   margin-bottom: 20px;
+   padding-top: 80px;
+   margin: 20px 0;
+   font-family: Arial;
+ 
+}
+
+
+/* Input and Label Styles */
+form #creditcard label {
+   display: inline-block;
+  
+   font-size: 1em;
+   margin-bottom: 15px;
+   margin-right: 10px;
+   width: auto;
+   text-align: right;
+   /*color: rgb(57, 44, 28);*/
+}
+
+
+
+form #creditcard input {
+   display: inline-block;
+   background-color: white;
+   
+}
+
+/* Radio Button Styles */
+
+form label.cardLabel {
+   display: inline-block;
+   float: none;
+   width: auto;
+   text-align: left;
+   margin-top: -10px;
+}
+
+form fieldset#cards {
+   display: block;
+   float: left; 
+}
+
+form fieldset#cards > span {
+   display: inline-block;
+   margin-left: 8px;
+   width: 50px;
+}
+
+
+
+form input[type='radio'] {
+   display: inline-block;
+   width: auto;
+   float: none;
+   clear: none;
+}
+
+
+
+form input#cvc {
+   width: 4em;
+}
+
+form #subButton {
+   display: block;
+   width: 210px;
+   height: 35px;
+   margin: 15px 0px 10px 200px;
+   background-color: blue;
+   font-size: 1.3em;
+   border-radius: 20px;
+   float: none;
+   border: none;
+}
+
+/* Valid and Invalid Styles */
+
+input:invalid, input:focus:invalid, select:invalid, select:focus:invalid {
+   outline: none;
+   background-color: rgba(221,147,148,0.2);
+ }
+
+input:valid, input:focus:valid, select:valid, select:focus:valid {
+   outline: none;
+   background-color: none;
+}
+
+/***********************************************************************************/
+
+/* OrderSubmit style*/
+#orderSection h3{
+	text-align: center;
+	font-size: 1.4em;
+
+}
+
+#orderTable {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+}
+
+#orderTable td{
+    width: 50%;
+    text-align: left;
+	border: 1px solid blank;
+	font-size: 0.6em;
+	font-weight: normal;
+}
+
+#orderTable td, #orderTable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#orderTable tr:nth-child(even){background-color: #f2f2f2;}
+
+#orderTable tr:hover {background-color: #ddd;}
+
+#orderTable th {
+  padding-top: 12px;
+  padding-bottom: 20px;
+  text-align: left;
+  background-color: blue;
+  color: white;
+}
+
+
+
+
+/*-------------------- Project Styles ------------------*/
+
+#containerStaff {
+   background-color: lightblue;
+}
+
+.containerStaff h1 {
+   font-size: 2.8em;
+   text-align: center;
+   margin: 0;
+   padding: 10px 0 10px;
+   color: red;
+}
+
+input#getFile {
+   display: block;
+   width: 300px;
+   margin: 0 auto;
+   font-size: 0.95em;
+}
+
+
+div#containerStaff {
+   width: 1350px;
+   height: 850px;
+   margin: 10px auto;
+   overflow:auto;
+   padding: 10px;
+   
+}
+
+div#containerStaff table {
+   border-collapse: collapse;
+   font-size: 0.9em;
+}
+
+div#containerStaff th, div#containerStaff td {
+   border: 1px solid rgb(160, 160, 160);*/
+   background-color: lightBlue;
+   padding: 7px 5px;
+   border-bottom: 1px solid red;
+ 
+}
+div#containerStaff table th {
+   color: black;
+   background-color: rgba(73, 0, 252, 0.5);
+   text-align: center;
+   font-weight: 500px;
+  
+}
+
+div#containerStaff table tr:nth-of-type(even) td {
+   background-color: #f2f2f2;
+}
+div#containerStaff table tr td:first-of-type {
+   white-space:nowrap;
+}
+
+div#containerStaff table tr:hover {
+	background-color: gray;
+}
+
+
+div#containerStaff table tr td:last-of-type {
+   white-space:nowrap;
+}
+
+div#containerStaff table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+div#containerStaff th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+div#containerStaff img {
+   
+	max-width: 100%;
+	height: auto;   
+    display: block;  
+    margin: 0 auto;
+    }
+	
+	
+/*Lastvisit styles	*/
+p#lastVisit {
+   position: absolute;
+   width: 170px;
+   border: 1px solid gray;
+   background-color: lightblue;
+   top: 180px;
+   right: 20px;
+   font-size: 0.9em;
+   text-align: center;
+   padding: 5px;
+   line-height: 1.2;
+   box-shadow: 3px 3px 5px gray;
+}
+
+span#lastVisitDate {
+   display: inline-block;
+}
+	
+	
+/*packages styles*/
+.package {
+   background-color: lightBlue;
+   box-shadow: 5px 0 20px #000000, -5px 0 20px rgb(120, 120, 120);   
+   flex: 1;
+}
+
+section > h1 {
+   text-align: center;
+   padding-top: 20px;
+   font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+   font-size: 2.3em;
+   color: fff;
+   letter-spacing: 0.08em;
+}
+
+span.plusminus img {
+   display: inline-block;
+   width: 30px;
+   margin: -5px 30px -5px 10px;
+}
+dl#package {
+   display: block;
+   width: 85%;
+   margin: 0 auto;
+   padding-bottom: 10px;
+   font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+
+dl#package dt {
+   background: url("minus.png") left center/25px no-repeat ;   
+   font-size: 1.4em;
+   display: block;
+   margin: 10px 0 10px;
+   text-indent: 60px;
+   color: fff; 
+   cursor: pointer;
+   user-select: none;
+}
+
+dl#package dt.hiddenAnswer {
+   background: url("plus.png") left center/25px no-repeat ;
+}
+
+
+
+dt + dd {
+   display: none;
+}
+
+dl#package dd p {
+   font-size: 1.2em;
+   line-height: 1.2;
+   margin: 0 0 15px 65px;
+   font-family: "Gill Sans", Helvetica, Arial, sans-serif;
+   text-align: justify;
+}
+
+/* Setting the body to use flexbox for better layout control */
+.container-play {
+    display: flex;
+    flex-direction: column; /* Arranging elements in a column */
+    align-items: center; /* Centering items horizontally */
+    justify-content: center; /* Centering items vertically */
+    height: 100vh; /* Setting the height to 100% of the viewport height */
+    margin: 0; /* Removing margin to avoid unnecessary space */
+}
+
+/* Styling the heading to create some space below it */
+.container-play h1 {
+    margin-bottom: 20px;
+}
+
+/* Styling the game area with a specific width, height, and border */
+#gameArea {
+    width: 1100px; /* Adjust the width as needed */
+    height:500px; /* Adjust the height as needed */
+    border: 2px solid black; /* Adding a solid black border */
+    position: relative; /* Setting the position as relative */
+    margin-bottom: 20px; /* Adding space below the game area */
+	background-color: lightBlue;
+}
+
+/* Styling the vehicles with absolute positioning */
+.vehicle {
+    position: absolute;
+}
+
+/* Styling the car with a yellow background */
+.car {
+    width: 60px;
+    height: 30px;
+    background-color: yellow;
+}
+
+/* Styling the motorcycle with a green background */
+.motorcycle {
+    width: 60px;
+    height: 30px;
+    background-color: green;
+}
+
+/* Styling the truck with a blue background */
+.truck {
+    width: 100px;
+    height: 50px;
+    background-color: blue;
+}
+
+/* Styling the buttons with various background colors and other properties */
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/* Styling the second button with a blue background */
+.button2 {background-color: #008CBA;} /* Blue */
+
+/* Styling the third button with a red background */
+.button3 {background-color: #f44336;} /* Red */
+
+/* Styling the fourth button with a gray background and black text color */
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */
+
+/* Styling the fifth button with a black background */
+.button5 {background-color: #555555;} /* Black */
+
+	
+/*contact styles*/
+#contact {
+    text-align: center;
+	
+}
+
+#contact h2{
+	 color: red;
+	  text-align: center;
+}
+
+ #contact h4{
+	 color: blue;
+	  text-align: center;
+ }
+ 
+ #contact a{
+	 text-decoration: none;
+	 padding-top: 30px;
+ }
+
+
+/* Style rules for footer content */
+footer .copyright {
+	font-size: 0.96em;
+	text-align: center;
+	color: #fff;
+	padding: 2% 4%;
+	float: left;
+	width: 80%;
+}
+
+footer p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social {
+	float: right;
+	width: 20%;
+	padding: 2%;
+}
+
+.social img {
+	display: inline-block;
+	padding: 5%;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px), print {
+    
+    /* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+    .tablet-desktop {
+        display: block;
+    }
+
+    .mobile, .mobile-nav {
+        display: none;
+    }
+    
+    /* Tablet Viewport: Style rule for header */
+    header {
+        padding-bottom: 2%;
+    }
+    
+    /* Tablet Viewport: Style rules for nav area */
+    nav {
+        padding: 1%;
+        margin-bottom: 1%;
+    }
+
+    nav ul {
+        list-style-type: none;
+        text-align: center;
+    }
+    
+    nav li {
+        font-size: 1.5em;
+        font-family: 'Francois One', sans-serif;
+        display: inline-block;
+        border-right: 1px solid #fff;
+    }
+    
+    nav li:last-child {
+        border-right: none;
+    }
+    
+    nav li a {
+        padding: 0.1em 0.75em;
+        display: block;
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    /* Tablet Viewport: Style rules for main content area */
+    main ul {
+        margin: 0 0 4% 10%;
+    }
+  
+    .tel-num {
+        font-size: 1.35em;
+    }*/
+
+	
+	.row {
+    flex-direction: column-reverse;
+	}
+	.col-25 {
+    margin-bottom: 20px;
+  }
+   
+
+/* article styles */
+
+article {
+   width: 100%;
+   height: 800px;
+   margin: 0 auto;
+}
+
+article > h1 {
+   font-size: 3.8em;
+   text-align: center;
+   /*color: ivory;*/
+  /* text-shadow: 2px 2px 10px black;*/
+   font-color: black;
+   font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+   margin: 5px 0 20px 0;
+}
+
+article > p {
+   font-size: 1.5em;
+   line-height: 2;
+}
+
+article > ul {
+   list-style-type: none;
+   font-size: 1.0em;
+   line-height: 2;
+   padding-left: 20px;
+   padding-bottom: -2px;
+   /*border-bottom: 3px solid gray;*/
+   
+}
+
+/* Styles for the slideshow box containing the images and tools  */
+	/* --------------------------------------------------------------*/
+
+	/* Styles for the box containing the slideshow and tools */
+	div#lightbox {
+	   position: relative;
+	   width: 960px;
+	   height: 170px;
+	   margin: 20px auto;
+	}
+
+	/* Styles for slideshow title */
+	div#lightbox h1#lbTitle {
+	   width: 100%;
+	   text-align: center;
+	   font-size: 2.4em;
+	   font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	   margin: 0 0 20px 0;
+	   font-color: black;
+	}
+
+	/* Styles for the left and right arrows to move through the slideshow */
+	div#lightbox div#lbPrev, div#lightbox div#lbNext {
+	   position: absolute;
+	   width: 5%;
+	   height: 30px;
+	   color: #F3EF8F;
+	   text-shadow: 2px 2px 2px black;
+	   font-size: 20px;
+	   font-weight: bold;
+	   top: 200px;
+	   line-height: 30px;
+	   text-align: center;
+	   z-index: 1;
+	   background: rgba(0,0, 0, 0.0);
+	   cursor: pointer;
+	   user-select: none;
+	}
+
+	/* Hovering styles for the left and right arrows */
+	div#lightbox div#lbPrev:hover, div#lightbox div#lbNext:hover {
+	   background: rgba(0,0,0,0.5);
+	}
+
+	/* Horizontal position of the left arrow */
+	div#lightbox div#lbPrev {
+	   left: 0px;
+	}
+
+	/* Horizontal position of the right arrow */
+	div#lightbox div#lbNext {
+	   right: 0px;
+	}
+
+	/* Styles for the box containing slide images */
+	div#lightbox div#lbImages {
+	   display: flex;
+	   flex-direction: row;     /* Place images within a flexbox on a single row */
+	   flex-wrap: nowrap;
+	   width: 100%;
+	  /* height: 100%;*/
+	   height: 300px;
+		filter: grayscale(50%);
+		transition: transform 0.5s;
+	   overflow: hidden;        /* Hide images which overflow the box border */
+	}
+
+
+
+
+	/* Styles for images within the slideshow box */
+	div#lbImages img {
+	   display: block;
+	   width: 230px;
+	   height: auto;
+	   margin-right: 13px;
+	   filter: opacity(0.8);
+	   cursor: pointer;
+	   outline: 2px solid #9C6908;
+	   box-shadow: 3px 3px 10px black;  
+	   user-select: none;   
+	}
+
+	/* Hovering styles for images within the slideshow box */
+	div#lbImages img:hover {
+	   /*filter: opacity(1);*/
+	   filter: grayscale(0);
+	   cursor: pointer;
+	   transform: scale(1.1);
+	}
+
+
+
+	/* ---------------------------------------------------------*/
+	/* Styles for the overlay displaying an image in fullscreen */
+	/* ---------------------------------------------------------*/
+
+	/* Styles for the overlay */
+	div#lbOverlay {
+	   position: fixed;                        /* Overlay is fixed on screen */
+	   z-index: 1;                             /* Overlay sits on top of other content */
+	   width: 100%;                            /* Full width */
+	   height: 100%;                           /* Full height */
+	   top: 0;
+	   left: 0;
+	  background: rgba(0, 0, 255, 0.6);
+	   display: flex;
+	   justify-content: center;
+	   align-items: center;
+	}
+
+	/* Styles for the figure box within the overlay */
+	div#lbOverlay figure {
+	   display: block;
+	   width: 80%;
+	   max-width: 800px;
+	}
+
+	/* Styles for the image within the overlay */
+	div#lbOverlay figure img {
+	   display: block;
+	   margin: auto;
+	   width: 100%;
+	   height: auto;
+	   box-shadow: 5px 5px 20px black;
+	   animation-name: zoom;      /* animate the opening of the figure */
+	   animation-duration: 1s;    /* over a 1-second interval */
+	}
+
+	/* Styles for the caption within the overlay */
+	div#lbOverlay figure figcaption {
+	   text-align: center;
+	   font-size: 1.25em;
+	   color: white;
+	   margin-top: 10px;
+	   animation-name: zoom;      /* animate the opening of the figure */
+	   animation-duration: 1s;    /* over a 1-second interval */  
+	}
+
+	/* Styles for the overlay close button */
+	div#lbOverlay div#lbOverlayClose {
+	   position: absolute;
+	   top: 20px;
+	   right: 40px;
+	   color: #f1f1f1;
+	   font-size: 40px;
+	   cursor: pointer;
+	   user-select: none;
+	}
+
+	/* Hovering styles for the modal window close button */
+	div#lbOverlay div#lbOverlayClose:hover {
+	   color: #F7F1A9;
+	   text-shadow: 3px 3px 0px black;
+	}
+
+	/* Keyframe animation for the opening of the modal window figure and caption */
+	@keyframes zoom {
+	  from {transform:scale(0)}
+	  to {transform:scale(1)}
+	}
+
+    
+    /* Tablet Viewport: Animation */
+    @-webkit-keyframes text-animation {
+        0% { font-size: 1em; }
+        50% { font-size: 2em; }
+        100% { font-size: 1.35em; }
+    }
+    
+    @keyframes text-animation {
+        0% { font-size: 1em; }
+        50% { font-size: 2em; }
+        100% { font-size: 1.35em; }
+    }
+    
+    figcaption {
+        -webkit-animation-name: text-animation;
+        animation-name: text-animation;
+        -webkit-animation-delay: 3s;
+        animation-delay: 3s;
+        -webkit-animation-duration: 5s;
+        animation-duration: 5s;
+    }
+    
+}
+
+/*********************************************************************************/
+/* Contact us page*/
+
+.contact-page body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.contact-page .container {
+  padding: 10px;
+}
+
+.contact-page .title-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-page .title-section h2 {
+  color: red;
+}
+
+.contact-page .title-section p  {
+  color: #555;
+   font-weight: bold; 
+  font-size: 28px; 
+}
+
+.contact-page .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.contact-page .column {
+  width: 45%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 0px;
+  /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
+}
+
+.contact-page .contact-details h3 {
+  color: red;
+}
+
+.contact-page .contact-details a {
+  /*color: #4267B2;*/
+   color: black;
+  text-decoration: none;
+  
+}
+
+.contact-page .contact-details a:hover {
+  text-decoration: none;
+}
+
+.contact-page .contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-page .contact-form input,
+.contact-page .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-page .contact-form textarea {
+  height: 100px;
+}
+
+.contact-page .contact-form input[type="submit"] {
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-page .contact-form input[type="submit"]:hover {
+  background-color: darkred;
+}
+
+/* Responsive Design for Contact Page */
+.contact-page @media (max-width: 768px) {
+  .contact-page .column {
+    width: 100%;
+  }
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1015px), print {
+    
+    /* Desktop Viewport: Style rule for header */
+    header {
+        width: 25%;
+        float: left;
+        padding-bottom: 0;
+    }
+    
+    /* Desktop Viewport: Style rules for nav area */
+    nav {
+        float: right;
+        width: 70%;
+        margin: 4em 1em 0 0;
+    }
+
+    nav ul {
+        text-align: right;
+    }
+    
+    nav li {
+        border: none;
+    }
+
+    nav li a {
+        padding: 0.5em 1em;
+    }
+    
+    nav li a:hover {
+        color: #000;
+        background-color: #fff;
+        transform: scale(1.3);
+    }
+    
+    /* Desktop Viewport: Style Rules for main content */
+    main {
+        clear: left;
+    }
+    
+    main h1 {
+        font-size: 1.8em;
+    }
+    
+    
+    /* Desktop Viewport: Style rules for form elements */
+   
+  
+}
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px) {
+ 
+    #container {
+        width: 1920px;
+        margin: 0 auto;
+    }
+
+}
+
+/* Media Query for Print */
+@media print {
+    
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+    
+}
+
