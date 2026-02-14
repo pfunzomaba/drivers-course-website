@@ -16,43 +16,10 @@ Simulates booking/payment workflows
 Displays staff information from JSON data
 Includes interactive UI features and animations
 
-Core Features Implemented:
-🏠 Home Page (index.html)
-Navigation bar linking to all pages
-Business logo and contact details
-Lightbox image gallery for business photos
+Core Features Implemented under the PDF:
 
-📝 Client Registration (clientRegistrationForm.html)
-Full registration form with validation rules
-Address fields with postal copy option
-Learner’s licence fields and minor contact info
-Password creation with validation requirements
-Last visited date display
-Postal code lookup retrieving place name and region
+[Assessment16Requirements.pdf](https://github.com/user-attachments/files/25314142/Assessment16Requirements.pdf)
 
-💳 Payment Page (clientPaymentForm.html)
-License type selection
-Lesson packages and study material options
-Credit card details with validation
-Quote calculation based on selections
-
-📦 Order Submission (orderSubmit.html)
-Displays all user information captured in forms
-Password masked for privacy
-Data passed between pages using query strings
-
-👥 Staff Directory (staff.json + staff.html)
-JSON-based staff directory
-Minimum of 10 staff members
-Staff table displaying images and contact details
-
-🎮 Interactive Play Page (play.html)
-Drag-and-drop vehicle simulation
-Users can add, move, and remove cars, motorcycles, and trucks
-
-📚 Packages Page (packages.html)
-Driving lesson packages displayed interactively
-Expand/collapse details for each package
 
 Technologies Used:
 HTML5
