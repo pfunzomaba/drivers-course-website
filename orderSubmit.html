@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang= "en">
+<!--Student Name: Maba Pfunzo
+	Date: 13-05-2023
+	File Name: orderSubmit.html
+-->
+
+<!-- This is the Order Submit page of Elelwani Driving School-->
+
+
+<head> 
+	<title>Elelwani Driving School</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Elelwani Driving School ">
+	<link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+</head>
+
+<body>
+
+		<div id="container">
+
+		<!-- navigation for Mobile users -->
+       
+
+		<!-- Elelwani Driving School website logo -->
+		<header>
+			<a href="index.html"><img src="images/logo.png" alt="Elelwani Driving School logo" ></a>
+		</header>
+		
+		<!-- Nagivation area for tablet and desktop-->
+		<nav class="tablet-desktop">
+			<ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="clientRegistrationForm.html">Register Here</a></li> 
+				<li><a href="packages.html">Packages</a></li> 
+				<li><a href="play.html">Play</a></li>
+				<li><a href="staff.html">Staff</a></li>
+				<li><a href="contact.html">Contact us</a></li>
+              
+            </ul>
+		</nav>
+        
+        
+		<main>
+		
+		<section id="orderSection">
+		<h2> Thanks for filling in. Here's what was received.<h2>
+	    <form id="order" name="order">
+        <table id="orderTable">
+         
+		  
+		  <!-- Registration Form Section -->
+			<tr>
+				<th colspan="2">Registration Form</th>
+			</tr>
+           <tr>
+              
+                <td> Preferred Name:</td>                                             
+				<td><span id="fname"></span></td>
+			</tr>
+			
+            <tr>
+                 <td>Client Full Names as on ID: </td>
+                 <td><span id="userNames"></span></td>
+            </tr>  
+			  
+            <tr>
+				 <td>Surname</td>
+                 <td><span id="surname"></span></td>
+            </tr>
+			  
+			<tr>
+				<td>ID Number:</td>
+				<td><span id="idNo"></span></td>
+			
+		    </tr>
+		    <tr>
+				<td>Telephone Work: </td>
+				<td><span id="tphone"></span></td>
+				
+		    </tr>
+		    <tr>
+				<td> Cellphone Number</td>
+				<td><span id="cphone"></span></td>
+		    </tr>
+		    <tr>
+				<td> E-mail:</td>
+				<td><span id="email" ></span></td>
+		    </tr>
+		    <tr>
+				<td> Home address</td>
+				<td><span id="addrHome"></span></td>
+		  </tr>
+		  <tr>
+				<td>Same as Home Address </td>
+				<td><span id="userHome"></span></td>
+				
+		    </tr>
+		    <tr>
+				<td> Postal address </td>
+				<td><span id="addrPostal"></span></td>
+		    </tr>
+		    <tr>
+				<td> Do you have a valid learners license?</td>
+				<td><span id="validLicense"></span></td>
+		    </tr>
+		    <tr>
+				<td> Learners License expiry date (not compulsory)</td>
+				<td><span id="date"></span></td>
+		    </tr>
+		    <tr>
+				<td>If you are a minor, please supply parents contact number and names  </td>
+				<td><span id="parentsDetail"></span></td>
+		    </tr>
+		    <tr>
+				<td> Your Password </td>
+				<td><span id="pwd"></span></td>
+		    </tr>
+		    <tr>
+				<td> Confirm Your Password </td>
+				<td><span id="pwd2"></span></td>
+				
+		    </tr>
+			
+			<!-- Place and Region lookup Section -->
+			<tr>
+				<th colspan="2">Place and Region lookup</th>
+			</tr>
+			
+			<tr>
+				<td> Country</td>
+				<td><span id="country"></span></td>
+		    </tr>
+			<tr>
+				<td> Postal Code</td>
+				<td><span id="postalCode"></span></td>
+		    </tr>
+			
+			<tr>
+				<td> Place</td>
+				<td><span id="place"></span></td>
+		    </tr>
+			<tr>
+				<td> Region</td>
+				<td><span id="region"></span></td>
+		    </tr>
+			
+			<!-- Payment Form Section -->
+			<tr>
+				<th colspan="2">Payment Form</th>
+			</tr>
+			
+			<tr>
+				<td> Name on credit card</td>
+				<td><span id="cardName"></span></td>
+		    </tr>
+			<tr>
+				<td> Credit card type</td>
+				<td><span id="cards"></span></td>
+		    </tr>
+			<tr>
+				<td>Credit Card Number </td>
+				<td><span id="cardNumber"></span></td>
+		    </tr>
+			
+			<tr>
+				<td>Expiration Date </td>
+				<td><span id="expMonth"></span><span id="expYear"></span></td>
+		    </tr>
+			<tr>
+				<td>CVC </td>
+				<td><span id="cvc"></span></td>
+		    </tr>
+			
+			<!-- Additional Information Section -->
+			<tr>
+				<th colspan="2">Additional Information</th>
+			</tr>
+			
+		    <tr>
+				<td> Type of license required:</td>
+				<td><span id="typelin"></span></td>
+		    </tr>
+  
+           <tr>
+				<td> Number of lessons required:</td>
+				<td><span id="lesson"></span></td>
+		    </tr>
+			
+			<tr>
+				<td> Study material:</td>
+				<td><span id="material1"></span></td>
+		    </tr>
+		    <tr>
+				<td> SUBTOTAL</td>
+				<td><span id="subtotal"></span></td>
+		    </tr>
+		    <tr>
+				<td> VAT(15%)</td>
+				<td><span id="vat"></span></td>
+		    </tr>
+		    <tr>
+				<td>TOTAL </td>
+				<td><span id="total"></span></td>
+		    </tr>
+  
+			
+          </table>
+		 
+</form>
+   </section>
+	
+		</main>
+		
+		<!-- Use the footer area contains copyright information contact information -->
+		<footer>
+			<div class="copyright">
+				<p>&copy; Copyright 2023. All Rights Reserved.</p>
+				<p><a href="mailto:mafhumulelembiludziavhavha@gmail.com">mafhumulelembiludziavhavha@gmail.com</a></p>
+			</div>
+			
+			<div class="social">
+				<a href="https://www.facebook.com/people/Elelwani-Driving-School/61551340513923/" target="_blank"><img src="images/facebook-logo.png" alt="Facebook logo"></a>
+				
+			</div>
+			
+		</footer>	
+	
+	</div>
+<script src="scripts/script.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

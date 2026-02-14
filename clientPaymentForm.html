@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang= "en">
+<!--Student Name: Maba Pfunzo
+	Date: 13-05-2023
+	File Name: index.html
+-->
+
+<!-- This is the Home page of Elelwani Driving School-->
+
+
+<head> 
+	<title>Elelwani Driving School</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Elelwani Driving School ">
+	<link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+	
+</head>
+
+<body>
+
+	<div id="container">
+
+		<!-- navigation for Mobile users -->
+       
+		<!-- Elelwani Driving School website logo -->
+		<header>
+			<a href="index.html"><img src="images/logo.png" alt="Elelwani Driving School logo" ></a>
+		</header>
+		
+		<!-- Nagivation area for tablet and desktop-->
+		<nav class="tablet-desktop">
+			<ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="clientRegistrationForm.html">Register Here</a></li> 
+				<li><a href="packages.html">Packages</a></li> 
+				<li><a href="play.html">Play</a></li>
+				<li><a href="staff.html">Staff</a></li>
+				<li><a href="contact.html">Contact us</a></li>
+              
+            </ul>
+		</nav>
+        
+		<main>
+			
+			
+			<div class="container-form">
+			 <form  onsubmit="return validateLessons()" id="payment" name="payment" method="post" action="orderSubmit.html"> 
+			 
+			 		<div class="row">
+					<div class="col-50">
+						<div id="clientRegistration">
+						<table id="registerTable">
+           
+		  
+						  <!-- Registration Form Section -->
+							<tr>
+								<th colspan="2">Registration Form</th>
+							</tr>
+						   <tr>
+							  
+								<td> Preferred Name:</td>                                             
+								<td><span id="fname"></span></td>
+							</tr>
+							
+							<tr>
+								 <td>Client Full Names as on ID: </td>
+								 <td><span id="userNames"></span></td>
+							</tr>  
+							  
+							<tr>
+								 <td>Surname</td>
+								 <td><span id="surname"></span></td>
+							</tr>
+							  
+							<tr>
+								<td>ID Number:</td>
+								<td><span id="idNo"></span></td>
+							
+							</tr>
+							<tr>
+								<td>Telephone Work: </td>
+								<td><span id="tphone"></span></td>
+								
+							</tr>
+							<tr>
+								<td> Cellphone Number</td>
+								<td><span id="cphone"></span></td>
+							</tr>
+							<tr>
+								<td> E-mail:</td>
+								<td><span id="email" ></span></td>
+							</tr>
+							<tr>
+								<td> Home address</td>
+								<td><span id="addrHome"></span></td>
+						  </tr>
+						  <tr>
+								<td>Same as Home Address </td>
+								<td><span id="userHome"></span></td>
+								
+							</tr>
+							<tr>
+								<td> Postal address </td>
+								<td><span id="addrPostal"></span></td>
+							</tr>
+							<tr>
+								<td> Do you have a valid learners license?</td>
+								<td><span id="validLicense"></span></td>
+							</tr>
+							<tr>
+								<td> Learners License expiry date (not compulsory)</td>
+								<td><span id="date"></span></td>
+							</tr>
+							<tr>
+								<td>If you are a minor, please supply parents contact number and names  </td>
+								<td><span id="parentsDetail"></span></td>
+							</tr>
+							<tr>
+								<td> Your Password </td>
+								<td><span id="pwd"></span></td>
+							</tr>
+							<tr>
+								<td> Confirm Your Password </td>
+								<td><span id="pwd2"></span></td>
+								
+							</tr>
+							</table>
+							</div>
+							
+					</div>
+					
+					 <div class="col-50">
+
+						<section id="orderSection">   
+		 
+							<div id="titleorder">
+							
+							<h3>License(Learner's & Driver's) Order</h3><br><br>
+							</div>
+							
+							
+							 <label id="labels" for="typelin">Type of license required: </label>
+							 <select name="typelin" id="typelin">
+								<option selected>Learner's license</option>
+								<option >Driver's license Code 8</option>
+							   <option >Driver's license Code 10</option>
+							 </select>   <br>
+							
+							 
+								<label id="labels" >Number of lessons required:</label><br>
+								
+								<input type="checkbox" class="lesson" id="lesson1" value="1500.00" />
+								 <label for="lesson1">Code 8 Unlimited lessons + Driver's Licence Test (R1500.00)</label><br>
+								 <input type="checkbox" class="lesson" id="lesson2" value="2000.00" />
+								 <label for="lesson2">Code 8 limited lessons 1 month + Driver's Licence Test (R2000.00)</label><br>
+								 <input type="checkbox" class="lesson" id="lesson3" value="2500.00" />
+								 <label for="lesson3">Code 10 Unlimited lessons + Driver's Licence Test (R2500.00)</label><br>
+								 <input type="checkbox" class="lesson" id="lesson4" value="1800.00" />
+								 <label for="lesson4">Code 10 limited lessons 1 month + Driver's Licence Test(R1800.00)</label><br>
+								 <input type="checkbox" class="lesson" id="lesson5" value="2000.00" />
+								 <label for="lesson5">Code 10 limited lessons 3 month + Driver's Licence Test( R2000.00)</label><br>
+								 
+								  <aside>
+									  <span id="subtotallab">SUBTOTAL</span>
+									  <span id="subtotal">R0</span><br>
+									  <span id="vatpect">VAT(15%)</span>
+									  <span id="vat">R0</span><br>
+									  <span id="totallab">TOTAL</span>
+									  <span id="total">R0</span>     
+									  
+								   </aside>
+								
+								<label id="labels" >Study material:</label><br>
+								<input type="checkbox" class="studyItem" id="material1" value="108.00" />
+								<label for="material1">Learner's Licence Test (R108.00) <strong>N.B Self-Study</strong></label><br>
+								<input type="checkbox" class="studyItem" id="material1" value="438.596" />
+								<label for="material1">Driver's Licence Test (R500.00)</label><br>
+								
+								
+								
+							</section>
+						
+					
+						
+					<fieldset id="creditcard">
+					<legend>Credit Information</legend>
+
+					<label for="cardName">Name on credit card*</label>
+					<input name="cardName" id="cardName" required type="text" /> <br>             
+
+					<label>Credit card type*</label><br>
+					<fieldset id="cards">
+						<label class="cardLabel">
+						<input name="credit" value="masterp" type="radio" required />               
+						<span>MasterPass</span>
+					    </label>
+						
+					    <label class="cardLabel">               
+						<input name="credit" value="discover" type="radio" />
+						<span>Discover</span>
+						</label>
+						
+					    <label class="cardLabel">                              
+						<input name="credit" value="master" type="radio"  />
+						<span>MasterCard</span>
+						</label>
+						
+						<label class="cardLabel">                                    
+						<input name="credit" value="visa" type="radio"  />
+						<span>Visa</span><br>
+						</label><br>
+					</fieldset>  <br>        
+
+					<label for="cardNumber">Credit Card Number*</label><br>
+					<input name="cardNumber" id="cardNumber" required type="text"
+						   pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$"/>
+
+					<label for="expMonth">Expiration Date*</label>
+							<select id="expMonth" name="expMonth">
+							   <option value="mm">Month</option>
+							   <option value="01">01</option>
+							   <option value="02">02</option>
+							   <option value="03">03</option>
+							   <option value="04">04</option>
+							   <option value="05">05</option>
+							   <option value="06">06</option>
+							   <option value="07">07</option>
+							   <option value="08">08</option>
+							   <option value="09">09</option>
+							   <option value="10">10</option>
+							   <option value="11">11</option>
+							   <option value="12">12</option>
+							</select>
+							
+						<span id="separator"> / </span>
+							<select id="expYear" name="expYear">
+							   <option value="yy">Year</option>
+							   <option value="2022">2022</option>
+							   <option value="2023">2023</option>
+							   <option value="2024">2024</option>
+							   <option value="2025">2025</option>
+							   <option value="2026">2026</option>
+							</select> <br>              
+
+					<label for="cvc">CVC*</label>
+					<input name="cvc" id="cvc" required pattern="^\d{3}$" type="text"/>
+				 </fieldset>
+
+				 <p id="footnote">* - Required Item</p>        
+				 <input type="submit" id="subButton" value="Submit Payment" />  
+				 <!--<div id = "errorOption"></div>		-->		 
+			  </form>
+
+						</div>
+   
+		</main>
+		
+		<!-- Use the footer area contains copyright information contact information -->
+		<footer>
+			<div class="copyright">
+				<p>&copy; Copyright 2023. All Rights Reserved.</p>
+				<p><a href="mailto:mafhumulelembiludziavhavha@gmail.com">mafhumulelembiludziavhavha@gmail.com</a></p>
+			</div>
+			
+			<div class="social">
+				<a href="https://www.facebook.com/people/Elelwani-Driving-School/61551340513923/" target="_blank"><img src="images/facebook-logo.png" alt="Facebook logo"></a>
+				
+			</div>
+			
+		</footer>	
+	
+	</div>
+<script src= "scripts/script.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang= "en">
+<!--Student Name: Maba Pfunzo
+	Date: 13-05-2023
+	File Name: contact.html
+-->
+
+<!-- This is the Home page of Elelwani Driving School-->
+
+
+<head> 
+	<title>Elelwani Driving School</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Elelwani Driving School ">
+	<link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+	
+</head>
+
+<body>
+
+	<div id="container">
+
+		<!-- navigation for Mobile users -->
+       
+       
+		<!-- Elelwani Driving School website logo -->
+		<header>
+			<a href="index.html"><img src="images/logo.png" alt="Elelwani Driving School logo" ></a>
+		</header>
+		
+		<!-- Nagivation area for tablet and desktop-->
+		<nav class="tablet-desktop">
+			<ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="clientRegistrationForm.html">Register Here</a></li> 
+				<li><a href="packages.html">Packages</a></li> 
+				
+				<li><a href="staff.html">Staff</a></li>
+				<li><a href="contact.html">Contact us</a></li>
+              
+            </ul>
+		</nav>
+        
+		<main>
+		
+				<div class="contact-page">
+			  <div class="container">
+				<div class="title-section">
+				  <h2>GET IN TOUCH</h2>
+				  <p>Contact us, or leave us a message:</p>
+				</div>
+				<div class="row">
+				  <div class="column contact-details">
+					<h3>Contact details</h3>
+					<p>📍 Thohoyandou, Behind Thavhani Mall, South Africa</p>
+
+					<p>
+					  <a href="mailto:mafhumulelembiludziavhavha@gmail.com">📧 mafhumulelembiludziavhavha@gmail.com</a>
+					</p>
+					<p>
+					  <a href="https://www.facebook.com/people/Elelwani-Driving-School/61551340513923/">📘 Facebook</a>
+					</p>
+					<p>📞 079 912 1316</p>
+				  </div>
+				  <div class="column">
+					<form class="contact-form"  onsubmit="showMessage(event)">
+					  <label for="fname">First Name</label>
+					  <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+					  <label for="lname">Last Name</label>
+					  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+					  <label for="email">Email Address</label>
+					  <input type="email" id="email" name="email" placeholder="Enter your email address">
+					  <label for="cellNo">Cell Phone Number</label>
+					  <input type="text" id="cellNo" name="cellnumber" placeholder="Your Phone Number..">
+					  <label for="subject">Subject</label>
+					  <textarea id="subject" name="subject" placeholder="Write something.." ></textarea>
+					  <input type="submit" value="Submit">
+					</form>
+				  </div>
+				</div>
+			  </div>
+			</div>
+
+
+			
+	
+		</main>
+		
+		<!-- Use the footer area contains copyright information contact information -->
+		<footer>
+			<div class="copyright">
+				<p>&copy; Copyright 2023. All Rights Reserved.</p>
+				
+			</div>
+			
+			
+		</footer>	
+	
+	</div>
+	
+	<script src="scripts/script.js" ></script>
+	<script>
+function showMessage(event) {
+    event.preventDefault(); // stops page refresh
+    
+    alert("Form submitted successfully!");
+
+    // Optional: reset form after submit
+    document.querySelector(".contact-form").reset();
+}
+</script>
+
+
+
+</body>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

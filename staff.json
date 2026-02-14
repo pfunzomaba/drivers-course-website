@@ -1,0 +1,20 @@
+{ "directory" : [
+   {
+      "staff_number": "emp0001",
+      "first_name": "Mbilu",
+      "last_name": "Mafhumulele",
+      "job_description": "Owner",
+      "work_phone": "079-912-1316",
+      "work_email": "mafhumulelembiludziavhavha@gmail.com"
+      
+   },
+   {
+      "staff_number": "emp0001",
+      "first_name": "Mbilu",
+      "last_name": "Mafhumulele",
+      "job_description": "Instructor",
+      "work_phone": "079-912-1316",
+      "work_email": "mafhumulelembiludziavhavha@gmail.com"
+      
+   }
+]}

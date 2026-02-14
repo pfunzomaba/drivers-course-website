@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang= "en">
+<!--Student Name: Maba Pfunzo
+	Date: 13-05-2023
+	File Name: registrationForm.html
+-->
+
+<!-- This is the Home page of Elelwani Driving School-->
+
+
+<head> 
+	<title>Elelwani Driving School</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Elelwani Driving School ">
+	<link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+	
+</head>
+
+<body>
+
+	<div id="container">
+
+
+		<!-- Elelwani Driving School website logo -->
+		<header>
+			<a href="index.html"><img src="images/logo.png" alt="Elelwani Driving School logo" ></a>
+		</header>
+		
+		<!-- Nagivation area for tablet and desktop-->
+		<nav class="tablet-desktop">
+			<ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="clientRegistrationForm.html">Register Here</a></li> 
+				<li><a href="packages.html">Packages</a></li> 
+				<li><a href="play.html">Play</a></li>
+				<li><a href="staff.html">Staff</a></li>
+				<li><a href="contact.html">Contact us</a></li>
+              
+            </ul>
+		</nav>
+		
+		<main>
+		
+			
+		<div class="col-75">
+		<p id="lastVisit">Your last visit was:<br /><span id="lastVisitDate"></span></p>
+		
+			<div class="container-form">
+				<h1>Are ready to start your jounery of becoming a driver?</h1>
+				
+				<form id="form" name="form" method="get" action="clientPaymentForm.html">
+				
+				<div class="row">
+					<div class="col-50">
+						<h3>Register Here</h3>
+						
+					<div id="input-control">
+						<label for="fname"><i class="fa fa-user"></i> Preferred Name:</label>
+						<input type="text"  id="fname" name="firstname" placeholder="Faith">
+						<div id="feedbackf"></div>
+						  <div class="error"></div>
+						 
+					</div>
+						
+						
+					<div id="input-control">	
+						<label for="userNames"><i class="fa fa-user"></i>Client Full Names as on ID: </label>
+						<input type="text"  id="userNames" name="userNames" placeholder="Pfunzo Faith Maba">
+						<div id="feedbacku"></div>
+						 <div class="error"></div>
+					</div>
+					
+					<div id="input-control">
+						<label for="surname"><i class="fa fa-user"></i>Surname </label>
+						<input type="text"  id="surname" name="surname" placeholder=" Maba">
+						<div id="feedbacks"></div>
+						 <div class="error"></div>
+						 
+					</div>
+
+					<div id="input-control">
+						<label for="idNo">ID Number: </label>
+						<input type="text" id="idNo" name="idNo" placeholder="1983050742987">
+						<div id="feedbackId"></div>
+						<div class="error"></div>
+					</div>
+
+					<div id="input-control">
+						<label for="tphone"><i class="fa fa-phone"></i>Telephone Work: </label>
+						<input type="tel"  id="tphone" name="tphone" placeholder="0780030538" >
+						<div id="feedbackt"></div>
+						<div class="error"></div>
+					</div>
+
+					<div id="input-control">
+						<label for="cphone"><i class="fa fa-mobile"></i>Cellphone Number </label>
+						<input type="tel" id="cphone" name="cphone" placeholder="0780030538 ">
+						<div id="feedbackc"></div>
+						<div class="error"></div>
+					</div>		
+
+					<div id="input-control">
+						<label for="email"><i class="fa fa-envelope"></i>E-mail: </label>
+						<input type="email" id="email" name="email" placeholder="elelwani@gmail.com">
+						<div id="feedbacke"></div>
+						<div class="error"></div>
+					</div>	
+					
+					
+					  <fieldset id="addressFields">
+						 <h1>Place and Region Lookup</h1>
+						 <label for="country">Country</label>
+						 <select name="country" id="country">
+							<option value="za">South Africa</option>
+						 </select>
+						 
+						 <label for="postalCode">Enter a Postal Code</label>
+						 <input type="text" name="postalCode" id="postalCode" autocomplete="off"/>
+						
+					  </fieldset>
+				  
+				</div>
+			 
+				  
+				  <div class="col-50">
+				  
+					
+						
+						<div id="input-control">
+						<br><br><br>
+						<label id="addrHomel" for="addrHome"><i class="fa fa-address-card-o"></i> Home address </label>
+						<input type="text" id="addrHome" name="addresshome" placeholder="542 A. 15th Street">
+						<div id="feedbackh"></div>
+						<div class="error"></div>
+					</div>
+
+						
+						<div id="input-control">
+							<label>Same as Home Address</label>
+
+							<label class="radio">Yes
+								<input id="sameAddress" type="radio" name="sameAddress" value="Yes"><span> </span>
+							</label>
+
+							<label class="radio">No
+								<input id="sameAddress" type="radio" name="sameAddress" value="No" ><span></span>
+							</label>
+
+							<div id="feedbackl"></div>
+							<div class="error"></div>
+						</div>
+												  
+						<div id="input-control">  
+							 <label for="addrPostal"><i class="fa fa-address-card-o"></i> Postal address </label>
+							 <input type="text" id="addrPostal" name="addresspostal" placeholder="542 A. 15th Street">
+							 <div id="feedbackPaddr"></div>
+							 <div class="error"></div>
+						</div>
+						   
+							
+						<div id="input-control">
+							<label>Do you have a valid learners license?</label>
+							
+							<label class="radio">Yes
+									<input id ="validLicense" type="radio" name="radio" value="Yes" ><span> </span>
+							</label>
+							<label class="radio">No
+									<input id ="validLicense" type="radio" name="radio" value = "No"><span></span>
+							</label>
+							<div id="feedbackl"></div>
+							<div class="error"></div>
+						</div>
+						
+							
+						<div id="expDate">
+							<label for="expDate">Learners License expiry date (not compulsory)</label><vr>
+								<span> 
+									<input type="date" id="date" name="date">
+								</span>			
+						</div>
+							
+						
+						<div id="input-control">						
+							<label for="parentsDetail" id="parentsDetails">If you are a minor, please supply parents contact number and names  </label>
+							<textarea  id="parentsDetail" name="parentsDetail" placeholder="Type N/A if not " rows="4" cols="60"></textarea>
+							<div id="feedbackp"></div>
+							<div class="error"></div>
+						</div>
+
+						
+						<div id="input-control">
+							<label for="pwd"><i class="fas fa-lock"></i>Your Password </label>
+							<input type="password" id="pwd" name="pwd" placeholder="Your Password">
+							 <div id="feedbackpwd"></div>
+							<div class="error"></div>
+							
+						</div>
+
+						<div id="input-control">
+							<label for="pwd2"><i class="fas fa-lock"></i>Confirm Your Password </label>
+							<input type="password" id="pwd2" name="pwd2" placeholder="Confirm Your Password">
+							 <div id="feedbackpwd2"></div>
+							 <div class="error"></div>							
+							
+						</div>
+						
+						<div id="placelook">
+						 <label for="place">Place</label>
+						 <input type="text" name="place" id="place" autocomplete="off" />
+						 
+						</div> 
+						 <label for="region">Region</label>
+						 <input type="text" name="region" id="region" autocomplete="off" />
+				
+			 
+						
+					  </div>
+					  <input type="submit" id="submitButton" value="Next" /><br>
+					 
+					  <div id = "errorBox"></div>
+					  
+				</div>
+				
+				
+		  </form>
+			
+				 	 </div>
+				</div>
+		
+		</main>
+			
+			<!-- Use the footer area contains copyright information contact information -->
+			<footer>
+				<div class="copyright">
+					<p>&copy; Copyright 2023. All Rights Reserved.</p>
+					<p><a href="mailto:mafhumulelembiludziavhavha@gmail.com">mafhumulelembiludziavhavha@gmail.com</a></p>
+				</div>
+				
+				<div class="social">
+					<a href="https://www.facebook.com/people/Elelwani-Driving-School/61551340513923/" target="_blank"><img src="images/facebook-logo.png" alt="Facebook logo"></a>
+					
+				</div>
+				
+			</footer>	
+		
+		</div>
+<script src= "scripts/script.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
