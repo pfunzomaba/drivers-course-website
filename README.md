@@ -1,13 +1,13 @@
 # drivers-course-website
 Driving School Website Project (2023)
 
-Overview
+Overview:
 This is a web development project created in 2023 as part of the ICT1512 – Introduction to Interactive Programming practical assessment.
 The goal of the project was to design and implement an interactive website for a local driving school, demonstrating core front-end development skills including HTML, CSS, JavaScript, form validation, DOM manipulation, and JSON data handling. 
 
 Assessment16Requirements:
 
-Project Objectives
+Project Objectives:
 The project required building a multi-page interactive website that:
 Presents business information for a driving school
 Allows users to register as clients
@@ -16,7 +16,7 @@ Simulates booking/payment workflows
 Displays staff information from JSON data
 Includes interactive UI features and animations
 
-Core Features Implemented
+Core Features Implemented:
 🏠 Home Page (index.html)
 Navigation bar linking to all pages
 Business logo and contact details
@@ -54,13 +54,13 @@ Users can add, move, and remove cars, motorcycles, and trucks
 Driving lesson packages displayed interactively
 Expand/collapse details for each package
 
-Technologies Used
+Technologies Used:
 HTML5
 CSS3
 JavaScript
 JSON for structured data storage
 
-Project Structure
+Project Structure:
 index.html
 clientRegistrationForm.html
 clientPaymentForm.html
@@ -73,9 +73,8 @@ styles.css
 script.js
 
 
-Learning Outcomes
+Learning Outcomes:
 Through this project I gained experience in:
-
 Building structured multi-page websites
 Implementing client-side validation
 Managing form data across pages
@@ -83,6 +82,6 @@ Working with JSON data sources
 Creating interactive UI components
 Applying real-world business requirements to web design
 
-Disclaimer
+Disclaimer:
 This project was created for academic purposes as part of a university practical assessment.
 Business information used in the project was intended for demonstration only and not for commercial deployment.
